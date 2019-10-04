@@ -201,7 +201,7 @@ extends io.micronaut.core.order.Ordered</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>deserialize</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+<pre>@Nullable
 <a href="../../../../../../com/github/grimmjo/micronaut/nats/serdes/NatsMessageSerDes.html" title="type parameter in NatsMessageSerDes">T</a>&nbsp;deserialize(io.nats.client.Message&nbsp;message,
                         io.micronaut.core.type.Argument&lt;<a href="../../../../../../com/github/grimmjo/micronaut/nats/serdes/NatsMessageSerDes.html" title="type parameter in NatsMessageSerDes">T</a>&gt;&nbsp;argument)</pre>
 <div class="block">Deserializes the message into the requested type.</div>
@@ -222,8 +222,8 @@ extends io.micronaut.core.order.Ordered</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>serialize</h4>
-<pre><a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
-byte[]&nbsp;serialize(<a href="https://docs.oracle.com/javase/8/docs/api/javax/annotation/Nullable.html?is-external=true" title="class or interface in javax.annotation">@Nullable</a>
+<pre>@Nullable
+byte[]&nbsp;serialize(@Nullable
                            <a href="../../../../../../com/github/grimmjo/micronaut/nats/serdes/NatsMessageSerDes.html" title="type parameter in NatsMessageSerDes">T</a>&nbsp;data)</pre>
 <div class="block">Serializes the data into a byte[] to be published
  to nats.</div>
