@@ -94,7 +94,7 @@ public abstract class NatsConnectionFactoryConfig {
     }
 
     /**
-     * Sets the password to be passed to {@link  io.nats.client.Options.Builder#userInfo(char[], char[])}
+     * Sets the password to be passed to {@link  io.nats.client.Options.Builder#userInfo(char[], char[])}.
      * @param password the password
      */
     public void setPassword(@Nullable String password) {

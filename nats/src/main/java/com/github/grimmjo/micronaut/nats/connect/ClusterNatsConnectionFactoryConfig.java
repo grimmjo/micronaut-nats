@@ -34,7 +34,9 @@ public class ClusterNatsConnectionFactoryConfig extends NatsConnectionFactoryCon
 
     /**
      * Default constructor.
+     *
+     * @param name The connection name
      */
-    public ClusterNatsConnectionFactoryConfig(@Parameter("name") String name) {super(name);}
+    public ClusterNatsConnectionFactoryConfig(@Parameter("name") String name) { super(name); }
 
 }
