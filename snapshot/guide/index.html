@@ -45,9 +45,13 @@
                                 
                                 <div class="toc-item" style="margin-left:0"><a href="#introduction"><strong>1</strong><span>Introduction</span></a></div>
                                 
-                                <div class="toc-item" style="margin-left:0"><a href="#config"><strong>2</strong><span>Configuring The Connection</span></a></div>
+                                <div class="toc-item" style="margin-left:0"><a href="#whatsNew"><strong>2</strong><span>What's New</span></a></div>
                                 
-                                <div class="toc-item" style="margin-left:0"><a href="#health"><strong>3</strong><span>Nats Health Indicator</span></a></div>
+                                <div class="toc-item" style="margin-left:0"><a href="#quickStart"><strong>3</strong><span>Nats Quick Start</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="#config"><strong>4</strong><span>Configuring The Connection</span></a></div>
+                                
+                                <div class="toc-item" style="margin-left:0"><a href="#health"><strong>5</strong><span>Nats Health Indicator</span></a></div>
                                 
                             </div>
                         </div>
@@ -81,9 +85,13 @@
         
         <div class="toc-item" style="margin-left:0px" id="toc-item-introduction"><a href="#introduction"><strong>1</strong><span>Introduction</span></a></div>
         
-        <div class="toc-item" style="margin-left:0px" id="toc-item-config"><a href="#config"><strong>2</strong><span>Configuring The Connection</span></a></div>
+        <div class="toc-item" style="margin-left:0px" id="toc-item-whatsNew"><a href="#whatsNew"><strong>2</strong><span>What's New</span></a></div>
         
-        <div class="toc-item" style="margin-left:0px" id="toc-item-health"><a href="#health"><strong>3</strong><span>Nats Health Indicator</span></a></div>
+        <div class="toc-item" style="margin-left:0px" id="toc-item-quickStart"><a href="#quickStart"><strong>3</strong><span>Nats Quick Start</span></a></div>
+        
+        <div class="toc-item" style="margin-left:0px" id="toc-item-config"><a href="#config"><strong>4</strong><span>Configuring The Connection</span></a></div>
+        
+        <div class="toc-item" style="margin-left:0px" id="toc-item-health"><a href="#health"><strong>5</strong><span>Nats Health Indicator</span></a></div>
         
         </div>
     </div>
@@ -111,7 +119,51 @@
 </div>
 
 
-<h1 id="config">2 Configuring The Connection</h1>
+<h1 id="whatsNew">2 What's New</h1>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grimmjo/micronaut-nats/edit/master/src/main/docs/guide/whatsNew.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>This section will outline any breaking changes between major or milestone releases as well as detail any new features that have been added.</p>
+</div>
+
+
+<h1 id="quickStart">3 Nats Quick Start</h1>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grimmjo/micronaut-nats/edit/master/src/main/docs/guide/quickStart.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>To add support for Nats.io to an existing project, you should first add the Micronaut Nats configuration to your build configuration. For example:</p>
+</div>
+<div class="paragraph">
+<p>        <div class="listingblock multi-language-sample">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-groovy hljs" data-lang="gradle">compile <span class="hljs-string">'com.github.grimmjo:micronaut-nats'</span></code></pre>
+</div>
+</div>
+<div class="listingblock multi-language-sample">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="maven">&lt;dependency&gt;
+    &lt;groupId&gt;com.github.grimmjo&lt;/groupId&gt;
+    &lt;artifactId&gt;micronaut-nats&lt;/artifactId&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+</p>
+</div>
+
+
+<h1 id="config">4 Configuring The Connection</h1>
 
 <div class='contribute-btn'>
     <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grimmjo/micronaut-nats/edit/master/src/main/docs/guide/config.adoc"'>
@@ -161,12 +213,12 @@ It is also possible to disable the integration entirely with <code>nats.enabled:
 <pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">nats:
     server1:
       addresses:
-        - nats://localhost:4222
+        - "nats://localhost:4222"
       username: guest
       password: guest
     server2:
       addresses:
-        - nats://randomServer:4222
+        - "nats://randomServer:4222"
       username: guest
       password: guest</code></pre>
 </div>
@@ -178,8 +230,8 @@ It is also possible to disable the integration entirely with <code>nats.enabled:
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">nats:
     addresses:
-      - nats://localhost:4222
-      - nats://randomServer:4222
+      - "nats://localhost:4222"
+      - "nats://randomServer:4222"
     username: guest
     password: guest</code></pre>
 </div>
@@ -200,7 +252,7 @@ When the configuration option <code>nats.servers</code> is used, no other option
 </div>
 
 
-<h1 id="health">3 Nats Health Indicator</h1>
+<h1 id="health">5 Nats Health Indicator</h1>
 
 <div class='contribute-btn'>
     <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grimmjo/micronaut-nats/edit/master/src/main/docs/guide/health.adoc"'>
