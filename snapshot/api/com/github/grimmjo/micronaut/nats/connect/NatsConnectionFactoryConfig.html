@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -171,21 +171,31 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.util.Optional&lt;java.lang.String&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/grimmjo/micronaut/nats/connect/NatsConnectionFactoryConfig.html#getUsername--">getUsername</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/grimmjo/micronaut/nats/connect/NatsConnectionFactoryConfig.html#getToken--">getToken</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>java.util.Optional&lt;java.lang.String&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/grimmjo/micronaut/nats/connect/NatsConnectionFactoryConfig.html#getUsername--">getUsername</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/grimmjo/micronaut/nats/connect/NatsConnectionFactoryConfig.html#setAddresses-java.util.List-">setAddresses</a></span>(java.util.List&lt;java.lang.String&gt;&nbsp;addresses)</code>
 <div class="block">Sets the addresses to be passed to <code>Options.Builder.servers(String[])</code>}.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/grimmjo/micronaut/nats/connect/NatsConnectionFactoryConfig.html#setPassword-java.lang.String-">setPassword</a></span>(java.lang.String&nbsp;password)</code>
 <div class="block">Sets the password to be passed to <code>Options.Builder.userInfo(char[], char[])</code>.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/grimmjo/micronaut/nats/connect/NatsConnectionFactoryConfig.html#setToken-java.lang.String-">setToken</a></span>(java.lang.String&nbsp;token)</code>
+<div class="block">sets the token to be passed to <code>Options.Builder.token(char[])</code>.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../com/github/grimmjo/micronaut/nats/connect/NatsConnectionFactoryConfig.html#setUsername-java.lang.String-">setUsername</a></span>(java.lang.String&nbsp;username)</code>
 <div class="block">sets the username to be passed to <code>Options.Builder.userInfo(char[], char[])</code>.</div>
@@ -321,7 +331,7 @@ extends java.lang.Object</pre>
 <a name="setPassword-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setPassword</h4>
 <pre>public&nbsp;void&nbsp;setPassword(@Nullable
@@ -330,6 +340,33 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>password</code> - the password</dd>
+</dl>
+</li>
+</ul>
+<a name="getToken--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getToken</h4>
+<pre>public&nbsp;java.util.Optional&lt;java.lang.String&gt;&nbsp;getToken()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the token for the connection</dd>
+</dl>
+</li>
+</ul>
+<a name="setToken-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setToken</h4>
+<pre>public&nbsp;void&nbsp;setToken(java.lang.String&nbsp;token)</pre>
+<div class="block">sets the token to be passed to <code>Options.Builder.token(char[])</code>.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>token</code> - the token</dd>
 </dl>
 </li>
 </ul>
